@@ -1,0 +1,332 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Python Documentation for beginners</title>
+</head>
+<body>
+    <nav id="nav-bar">
+        <header id="nav-header">
+            <h1>Python <br> Documentation</h1>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="python-logo">
+        </header>
+        <ul>
+            <li><a class="nav-link" href="#introduction-python">Introduction</a></li>
+            <li><a class="nav-link" href="#hello-world-python">"Hello, World!"</a></li>
+            <li><a class="nav-link" href="#variables-types-python">Variables and Types</a></li>
+            <li><a class="nav-link" href="#lists-python">Lists, tuples, and dictionaries</a></li>
+            <li><a class="nav-link" href="#operators-python">Basic Operators</a></li>
+            <li><a class="nav-link" href="#string-formating-python">String Formatting</a></li>
+            <li><a class="nav-link" href="#string-operarions-python">Basic String Operations</a></li>
+            <li><a class="nav-link" href="#conditions-python">Conditions</a></li>
+            <li><a class="nav-link" href="#functions-python">Functions</a></li>
+            <li><a class="nav-link" href="#classes-python">Classes</a></li>
+            <li><a class="nav-link" href="#objects-python">Objects</a></li>
+            <li><a class="nav-link" href="#references-python">References</a></li>
+        </ul>
+
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="introduction-python">
+            <header>
+                <h3>Introduction</h3>
+            </header>
+            <article>
+                <p>Python is a general-purpose, high-level programming language that is easy to learn and use, making it an ideal choice for both beginners and experienced developers. It was first released in 1991 by Guido van Rossum, and has since become one of the most popular programming languages in the world, with a vast and growing community of users and developers.</p>
+                <p>Python is known for its simplicity and readability, making it easy to write and understand code. This is achieved through the use of clear and concise syntax, as well as a focus on readability and ease of use. Python also has a large number of libraries and modules that provide a wide range of functionality, making it a flexible and powerful language for a variety of tasks, including web development, data analysis, scientific computing, and much more</p>
+                <p>This documentation is designed to provide a comprehensive guide to using Python. It covers everything from the basics of the language, such as variables, data types, and basic operations, to more advanced features, such as classes and objects, modules and packages, and best practices for coding in Python. Whether you are new to programming or an experienced developer looking to learn Python, this documentation is a valuable resource to help you get started and grow your skills.</p>
+                <p>To start using Python, you will need to download and install the software on your computer. You can obtain the latest version of Python from the official website (python.org), and installation is straightforward and easy to follow. Once installed, you can open a Python interpreter to experiment with the language, or write and run scripts using an Integrated Development Environment (IDE) of your choice. Whether you are writing small scripts or building complex applications, Python provides a flexible and powerful platform for your development needs.</p>
+            </article>
+        </section>
+
+        <section class="main-section" id="hello-world-python">
+            <header>
+                <h3>"Hello, World!"</h3>
+            </header>
+            <article>
+                <p>The "Hello, World!" program is a traditional first step for anyone learning a new programming language. In Python, it is easy to write and run a simple "Hello, World!" program, which involves printing a message to the screen. The print function in Python can be used to output any string or other data type to the screen. Simply type the following code into a Python interpreter or script and run it to see the output:</p>
+                <code>print ("Hello, World")</code>
+                <p>This program outputs the string "Hello, World!" to the screen, providing a simple yet satisfying introduction to programming with Python.</p>
+            </article>
+        </section>
+
+        <section class="main-section" id="variables-types-python">
+            <header>
+                <h3>Variables and Types</h3>
+            </header>
+            <article>
+                <p>In Python, variables are used to store data, and the type of data that a variable can store is determined by its data type. Python has several built-in data types, including:</p>
+                <ul>
+                    <li>Integers (int): whole numbers, such as 1, 2, and 3.</li>
+                    <li>Floating-point numbers (float): numbers with decimal places, such as 3.14, 2.71828, and 0.5.</li>
+                    <li>Strings (str): sequences of characters, such as "Hello, World!" or "Alice".</li>
+                </ul>
+                <p>To assign a value to a variable in Python, you can use the assignment operator (=). For example:</p>
+                <code>
+                    x = 42 <br>
+                    y = 3.14 <br>
+                    name = "Alice"
+                </code>
+                <p>In this example, the integer value 42 is assigned to the variable x, the floating-point value 3.14 is assigned to the variable y, and the string value "Alice" is assigned to the variable name.</p>
+                <p>It's important to note that in Python, variable names cannot start with a number, and should be descriptive of the data they store. Additionally, variable names are case-sensitive, so x and X are considered to be different variables.</p>
+                <p>In addition to the built-in data types, Python also provides several other data structures for storing and organizing data, such as lists, tuples, and dictionaries, which are covered in more detail in later sections of this documentation</p>
+            </article>
+        </section>
+
+
+
+        <section class="main-section" id="lists-python">
+             <header>
+                <h3>Lists, tuples, and dictionaries</h3>
+            </header>
+            <article>
+                <p>In Python, there are several built-in data structures for storing and organizing data. These include:</p>
+                <ul>
+                    <li>Lists
+                        <p>A list is a collection of values that can be of any data type, including other lists. Lists are created using square brackets [] and values are separated by commas. For example:</p>
+                        <code>fruits = ["apple", "banana", "cherry"]</code>
+                        <p>In this example, fruits is a list containing the strings "apple", "banana", and "cherry". Lists are ordered, meaning that the order of elements in a list is preserved.</p>
+                        <p>Lists are mutable, meaning that you can change the values of elements in a list after it has been created. For example:</p>
+                        <code>
+                            fruits[1] = "orange" <br>
+                            print(fruits)
+                        </code>
+                        <p>This code changes the second element of the fruits list (at index 1) from "banana" to "orange". The updated list is then printed to the screen, which would output ['apple', 'orange', 'cherry'].</p>
+                    </li>
+
+                    <li>Tuples
+                        <p>A tuple is similar to a list, but is immutable, meaning that the values of elements in a tuple cannot be changed after it has been created. Tuples are created using parentheses () and values are separated by commas. For example:</p>
+                        <code>person = ("Alice", 30, "female")</code>
+                        <p>In this example, person is a tuple containing the values "Alice", 30, and "female".</p>
+                    </li>
+                    <li>Dictionaries
+                        <p>A dictionary is a collection of key-value pairs. Each key maps to a value. Dictionaries are created using curly braces {} and keys and values are separated by colons. For example:</p>
+                        <code>person = {"name": "Alice", "age": 30, "gender": "female"}</code>
+                        <p> this example, person is a dictionary with keys "name", "age", and "gender", which map to the values "Alice", 30, and "female", respectively.</p>
+                        <p>Dictionaries are also mutable, meaning that you can add, change, or delete key-value pairs after a dictionary has been created. For example:</p>
+                        <code>
+                            person["address"] = "123 Main St." <br>
+                            print(person)       
+                        </code>
+                        <p>This code adds a new key-value pair to the person dictionary, with key "address" and value "123 Main St.". The updated dictionary is then printed to the screen, which would output {'name': 'Alice', 'age': 30, 'gender': 'female', 'address': '123 Main St.'}.</p>
+                        <p>These data structures provide different ways to store and organize data, and you can use the one that is most appropriate for your needs. In later sections, you will learn how to manipulate and work with lists, tuples, and dictionaries.</p>
+
+
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="operators-python">
+            <header>
+                <h3>Basic Operators</h3>
+            </header>
+            <article>
+                <p>Python provides a number of basic arithmetic operators that can be used to perform mathematical operations on numbers and variables. These operators include addition (+), subtraction (-), multiplication (*), and division (/). The following example demonstrates how to use these operators in Python:</p>
+                <code>
+                    x = 42<br>
+                    y = 7<br>
+                    print(x + y) # 49<br>
+                    print(x - y) # 35<br>
+                    print(x * y) # 294<br>
+                    print(x / y) # 6.0
+                </code>
+                <p>In addition to these arithmetic operators, Python also provides other types of operators such as the modulus operator (%), which returns the remainder of a division operation, and the power operator (**), which raises a number to a specified power.</p>
+                <code>
+                    print(x % y) # 0 <br>
+                    print(x ** y) # 1419857
+                </code>
+                <p>It's also possible to use comparison operators (>, >=, <, <=, ==, !=) in Python to compare values and variables. These operators return a Boolean value (True or False) depending on the result of the comparison.</p>
+                <code>
+                    print(x > y) # True <br>
+                    print(x < y) # False <br>
+                    print(x == y) # False <br>
+                    print(x != y) # True
+                </code>
+                <p>By combining these operators, you can perform complex mathematical operations and make decisions in your code based on the results.</p>
+            </article>
+        </section>
+
+        <section class="main-section" id="string-formating-python">
+             <header>
+                <h3>String Formatting</h3>
+            </header>
+            <article>
+                <p>In Python, you can use string formatting to insert values into strings. String formatting allows you to create dynamic strings that can be adjusted based on the values of variables or other inputs. The format method is one of the most commonly used string formatting techniques in Python.</p>
+                <p>The format method works by replacing placeholders in a string with values. Placeholders are represented by curly braces {} and can contain positional or keyword arguments that specify how the values should be inserted into the string.</p>
+                <p>Here's an example that demonstrates how to use the format method to insert a value into a string:</p>
+                <code>
+                    name = "Alice"<br>
+                    print("Hello, {}!".format(name)) # Hello, Alice!
+                </code>
+                <p>In the example above, the string "Hello, {}!" contains a placeholder {}. The format method is used to replace the placeholder with the value of the name variable. The result of the format method is a new string that contains the value of the name variable.</p>
+                <p>You can also use the f-string syntax (introduced in Python 3.6) to insert values into strings. An f-string is a string literal that is prefixed with the letter f. Within an f-string, expressions can be evaluated and included inside the string literal, by enclosing them in curly braces {}.</p>
+                <code>
+                    name = "Alice" <br>
+                    print(f"Hello, {name}!") # Hello, Alice!
+                </code>
+                <p>String formatting is a powerful tool for creating dynamic strings in Python and can be used for a variety of tasks, such as creating messages, generating URLs, or constructing SQL queries.</p>
+            </article>
+        </section>        
+        
+        <section class="main-section" id="string-operarions-python">
+            <header>
+                <h3>Basic String Operations</h3>
+            </header>
+            <article>
+                <p>Python provides a wide range of built-in functions and methods for working with strings. With these tools, you can perform various operations on strings, such as concatenation, repetition, and character access.</p>
+                <p>Concatenation: You can concatenate two or more strings using the addition (+) operator. For example:</p>
+                <code>
+                    first_name = "Alice"<br>
+                    last_name = "Smith"<br>
+                    full_name = first_name + " " + last_name<br>
+                    print(full_name) # Alice Smith<br>
+                </code>
+                <p>In the example above, the first name and last name are concatenated to form the full name</p>
+                <p>Repetition: You can repeat a string multiple times using the repetition (*) operator. For example:</p>
+                <code>print("Hello " * 3) # Hello Hello Hello
+                </code>
+                <p>In the example above, the string "Hello " is repeated three times.</p>
+                <p>Length: You can find the length of a string using the len function. The length of a string is the number of characters in the string. For example:</p>
+                <code>
+                    full_name = "Alice Smith" <br>
+                    print(len(full_name)) # 9
+                </code>
+                <p>Character Access: You can access individual characters in a string using indexing. Indexing starts at 0 for the first character in the string. For example:</p>
+                <code>
+                    full_name = "Alice Smith" <br>
+                    print(full_name[0]) # A
+                </code>
+                <p>In the example above, the first character in the full_name string is accessed using indexing.</p>
+                <p>Basic string operations are an essential part of working with strings in Python and are used in many different applications. Whether you're working with string data from a file, user input, or a network, understanding how to manipulate and work with strings is a critical skill for any Python programmer.</p>
+            </article>
+        </section>
+
+
+        <section class="main-section" id="conditions-python">
+             <header>
+                <h3>Conditions</h3>
+            </header>
+            <article>
+                <p>You can use conditions in Python to make decisions based on the values of variables. The if statement is used to specify conditions. he if statement allows you to test a condition and execute a block of code if the condition is true. In the example above, the condition x > 0 is evaluated, and if it is true (in this case, it is), the message "Positive" is printed.</p>
+                <p>In addition to the if statement, you can use the elif (else if) and else statements to specify additional conditions and the code to execute if those conditions are true:</p>
+                <code>
+                    <!--<pre>-->
+                    x = 42 <br>
+                    if x > 0: <br>
+                        print("Positive") <br>
+                    elif x < 0: <br>
+                        print("Negative") <br>
+                    else: <br>
+                        print("Zero")
+                    <!--</pre>-->
+
+                </code>
+                <p>n this example, if x is greater than 0, the message "Positive" is printed. If x is less than 0, the message "Negative" is printed. If neither of these conditions are true (in this case, x is equal to 0), the message "Zero" is printed.</p>
+
+            </article>
+        </section> 
+
+        <section class="main-section" id="functions-python">
+            <header>
+                <h3>Functions</h3>
+            </header>
+            <article>
+                <p>Functions are reusable blocks of code that can be executed when they are called. Functions are defined using the def keyword and can accept arguments, perform a specific task, and return a value if needed. For example:</p>
+                
+                <code>
+                def greet(name): <br>
+                print("Hello, {}!".format(name)) <br>
+                greet("Alice") # Hello, Alice!
+                </code>
+                <p>In this example, the function greet is defined to accept a single argument name and print a message with that name. The function is then called with the argument "Alice"</p>
+                <p>Functions can also return a value using the <span>return</span>keyword</p>
+                <code>
+                    <!--<pre>-->
+                    def add(a, b): <br>
+                    return a + b   <br>
+                    result = add(40, 2) <br>
+                    print(result) # 42  
+                    <!--</pre>-->   
+                </code>
+                <p>In this example, the function add accepts two arguments a and b and returns their sum. The function is called with the arguments 40 and 2, and the returned result is stored in the variable result.</p>
+            </article>
+        </section>
+        <section class="main-section" id="classes-python">
+            <header>
+                <h3>Classes</h3>
+            </header>
+            <article>
+                <p>Classes in Python are a blueprint for creating objects. They allow you to define the structure and behavior of objects in a program, and are an essential aspect of object-oriented programming. A class defines a new data type, and objects of that type can be created by calling the class like a function.</p>
+                <p>To create a class in Python, use the class keyword, followed by the name of the class and a colon. The class body is indented, and typically contains class variables and methods:</p>
+                <code><pre>
+                class Dog:
+                    species = "Canis familiaris"
+                
+                    def __init__(self, name, breed):
+                        self.name = name
+                        self.breed = breed
+                
+                    def bark(self):
+                        print("Woof!")
+             </pre></code>
+                <p>In this example, we define a class Dog that has two class variables (species and breed) and one method (bark). The __init__ method is a special method called a constructor, and it is automatically called when an object of the class is created.</p>
+                <p>To create an object of a class, you simply call the class like a function and pass any required arguments:</p>
+                <code><!--<pre>-->
+                    dog = Dog("Fido", "Labrador")
+                    print(dog.name) # Fido
+                    print(dog.breed) # Labrador
+                    dog.bark() # Woof!
+                <!-- </pre>--></code>
+                <p>Classes are a powerful tool for organizing and structuring code, and are used in many different types of programs. They allow you to create objects that encapsulate data and behavior, making it easier to reuse code and build more complex systems</p>
+            </article>
+        </section>
+        <section class="main-section" id="objects-python">
+            <header>
+                <h3>Objects</h3>
+            </header>
+            <article>
+                <p>Objects are instances of classes, and they are one of the core building blocks of object-oriented programming in Python. A class is a blueprint that defines the attributes and behavior of a particular type of object. For example:</p>
+                <p></p>
+                <code>
+                    <pre>
+                class Dog: <br>
+                    def __init__(self, name, breed): <br>
+                        self.name = name <br>
+                        self.breed = breed <br>
+                    
+                    def bark(self):  <br>
+                        print("Woof!") <br>
+                
+                my_dog = Dog("Max", "Labrador") <br>
+                print(my_dog.name) # Max  <br>
+                print(my_dog.breed) # Labrador  <br>
+                my_dog.bark() # Woof! <br>
+                    </pre>
+                </code>
+                <p>In this example, the Dog class is defined with two attributes name and breed and a method bark. An instance of the class Dog is created with the name "Max" and the breed "Labrador". The attributes of the instance can be accessed using dot notation, and the method can be called using parentheses</p>
+                <p>Object-oriented programming in Python allows you to create complex, reusable code by defining and using objects.</p>
+            </article>
+        </section>
+        
+        <section class="main-section" id="references-python">
+            <header>
+                <h3>References</h3>
+            </header>
+            <article>
+                <ul class="reference-links">
+
+                <li><a href="https://chat.openai.com/chat">Chat Gpt</a></li>
+                <li><a href="https://www.python.org">Python.org</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Wikipedia</a></li>
+                <li><a href="https://www.freecodecamp.org/news/tag/python/">freecodecamp</a></li>
+                </ul>
+            </article>
+        </section> 
+    </main>
+
+    
+</body>
+</html>
